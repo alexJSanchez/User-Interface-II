@@ -18,7 +18,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	/* border: 0; */
+	/* border: 1px solid red;  */
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -55,31 +55,48 @@ body{
    text-align:center;
 }
 h1{
-    font-size:5rem;
+    padding-top: 1rem;
+    font-size:3rem;
 }
 .heading{
-    font-size:30px;
-   margin:0 10%;
-   padding-top:15px;
+    font-size:2.4rem;
+   
+   padding-top:1rem;
 }
 .heading p{
-    padding-top:15px;
-    font-size:24px;
+    margin:0 3%;
+    padding-top:1rem;
+    font-size:1.2rem;
+}
+nav{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
+}
+nav a{
+    margin: 3px;
+   text-decoration:none;
+    padding:.7rem 1.5rem;
+    border: 1px solid black;
 }
 img{
     width:100%;
 }
 .projects-section{
-    display:flex;
-
+  display: grid;
+  grid-template-columns: 50% 50%; 
+  gap: 5px;
 }
-.projects-section div{
+
+.projects-section img{
     padding:5px;
 }
-.project-summary{
-    display:flex;
-    align-items:center;
+.projects-summary{
+    display: grid;
+   grid-column-start: 1;
+   grid-column-end: 3;
 }
 .project-summary p{
-    font-size:25px;
+    font-size:15px;
 }
